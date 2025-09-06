@@ -53,6 +53,12 @@
     .card:hover img {
       filter: grayscale(0%) brightness(1.1);
     }
+    .caption {
+      padding: 10px;
+      font-size: 1.1rem;
+      color: #ffb3ff;
+      text-shadow: 0 0 5px #660066;
+    }
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
@@ -70,6 +76,18 @@
       height: 100%;
       border: 0;
     }
+    .noob-section {
+      margin: 50px auto;
+      max-width: 700px;
+      padding: 20px;
+      background: rgba(255,0,255,0.1);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255,0,255,0.4);
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff80ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
   </style>
 </head>
 <body>
@@ -77,17 +95,27 @@
 
   <div class="gallery">
     <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Azis_in_2018.png/600px-Azis_in_2018.png" alt="Азис">
+      <img src="https://i.imgur.com/o4RVSnT.png" alt="Натурален">
+      <div class="caption">Натурален</div>
     </div>
     <div class="card">
       <img src="https://i.imgur.com/o6aJacz.jpeg" alt="Ту-Ту стриймче">
+      <div class="caption">лятно ми е </div>
     </div>
+    <a href="https://www.youtube.com/watch?v=LiJQUEiZQgE&list=RDLiJQUEiZQgE&start_radio=1&ab_channel=fefotofefofbg" target="_blank" class="card">
+      <img src="https://i.imgur.com/xJ5SMZe.png" alt="Линк към видео">
+      <div class="caption">👉 Натисни за видео</div>
+    </a>
   </div>
 
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/lr2QwPaLk-c"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
+  </div>
+
+  <div class="noob-section">
+    🕶️ Noobcleaver казва: „Давай събове RITUALEEEE!“
   </div>
 </body>
 </html>
