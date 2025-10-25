@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Петров Новини - Вашият източник на информация</title>
+    <style>
+        /* --- Общи стилове --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: auto;
+            padding: 0 20px;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Хедър (Заглавна част) --- */
+        header {
+            background: #004080;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 4px solid #002b55;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* --- Навигация --- */
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        /* --- Основно съдържание --- */
+        main {
+            padding: 20px 0;
+        }
+
+        .main-news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        article.news-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        article.news-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .news-item h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        
+        .news-item h2.hot-topic {
+            color: #d9534f; /* Червен цвят за акцент */
+        }
+
+        .news-meta {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* --- Футър (Долна част) --- */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Петров Новини</h1>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Начало</a></li>
+                <li><a href="#">България</a></li>
+                <li><a href="#">Свят</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Технологии</a></li>
+                <li><a href="#">За нас</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="main-news">
+
+            <article class="news-item">
+                <img src="https://i.imgur.com/Z3MqVqw.png" alt="Стриймърът Митко Копитко">
+                <h2 class="hot-topic">Скандал в Twitch: Митко Копитко обвинен, че "краде" бийтове на живо</h2>
+                <div class="news-meta">
+                    <span>Автор: Онлайн Редактор</span> | <span>Дата: 25.10.2025</span>
+                </div>
+                <p>Популярният стриймър Митко Копитко се озова в центъра на забавна онлайн драма, след като зрители го обвиниха, че "краде" бийтове по време на своите излъчвания в Twitch. Според клипове, споделяни в социалните мрежи, Копитко слуша чужди инструментали, след което се опитва да ги пресъздаде на живо, често с комичен резултат. Феновете са разделени – едни го критикуват за липса на оригиналност, докато други се забавляват с неговите опити и смятат, че това е просто форма на забавление.</p>
+                <a href="#">Вижте реакциите &rarr;</a>
+            </article>
+            
+            <article class="news-item">
+                <img src="https://via.placeholder.com/800x450.png?text=Новина+1" alt="Изображение към новината">
+                <h2>Вълнуващо откритие в науката променя разбиранията ни</h2>
+                <div class="news-meta">
+                    <span>Автор: Иван Петров</span> | <span>Дата: 25.10.2025</span>
+                </div>
+                <p>Учени от международен екип обявиха, че са направили пробив, който може да революционизира начина, по който разбираме... (прочети още)</p>
+                <a href="#">Прочети повече &rarr;</a>
+            </article>
+
+            <article class="news-item">
+                <img src="https://via.placeholder.com/800x450.png?text=Спортна+Новина" alt="Изображение към новината">
+                <h2>Местният отбор спечели шампионата след драматичен финал</h2>
+                <div class="news-meta">
+                    <span>Автор: Елена Георгиева</span> | <span>Дата: 25.10.2025</span>
+                </div>
+                <p>В една незабравима вечер, нашият отбор триумфира с титлата след гол в последната минута. Стадионът изригна в... (прочети още)</p>
+                <a href="#">Прочети повече &rarr;</a>
+            </article>
+
+            <article class="news-item">
+                <img src="https://via.placeholder.com/800x450.png?text=Технологии" alt="Изображение към новината">
+                <h2>Нова технология обещава да удвои живота на батериите</h2>
+                <div class="news-meta">
+                    <span>Автор: Георги Димитров</span> | <span>Дата: 24.10.2025</span>
+                </div>
+                <p>Стартъп от Силициевата долина представи иновативна технология за батерии, която може да сложи край на ежедневните... (прочети още)</p>
+                <a href="#">Прочети повече &rarr;</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Петров Новини. Всички права запазени.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
